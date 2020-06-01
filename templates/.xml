@@ -1,0 +1,32 @@
+<templateSet group="我的模版">
+  <template name="htmlzs" value="&lt;!-- $aaa$ start --&gt;&#10;&#10;&lt;!-- $aaa$ end --&gt;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="aaa" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="CSS" value="true" />
+      <option name="HTML" value="true" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JSP" value="true" />
+      <option name="XML" value="true" />
+    </context>
+  </template>
+  <template name="lover" value="/**&#10;  *auther:刘铠熔&#10;  *$END$&#10;  */" description="生成快速注释的模板" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="thn" value="Thread.currentThread().getName()" description="快速生成当前线程名字" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="times" value="try {TimeUnit.SECONDS.sleep($END$);} catch (InterruptedException e) {e.printStackTrace();}" description="快速使用timeUtil生成睡眠时间数" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="nth" value="new Thread(()-&gt;{&#10;&#10;},&quot;$END$&quot;).start();" description="新建一个线程（学习用）" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+</templateSet>
